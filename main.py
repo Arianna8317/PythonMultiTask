@@ -80,10 +80,10 @@ if __name__ == "__main__":
     urls = args.urls
     if not urls:
         urls = images
-    """print(f"Downloaded  {len(urls)} images by threading")
+    print(f"Downloaded  {len(urls)} images by threading")
     download_images_threading(urls)
     print(f"Downloaded  {len(urls)} images by multiprocessing")
-    download_images_multiprocessing(urls)"""
+    download_images_multiprocessing(urls)
     print(f"Downloaded  {len(urls)} images asincronically")
     asyncio.run(download_images_asyncio(urls))
 
