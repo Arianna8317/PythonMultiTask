@@ -5,12 +5,6 @@ from pathlib import Path
 
 images = []
 
-urls = ['https://www.google.ru/',
-'https://gb.ru/',
-'https://ya.ru/',
-'https://www.python.org/',
-'https://habr.com/ru/all/',
-]
 with open("images.txt") as f:
     for image in f.readlines():
         images.append(image.strip())
